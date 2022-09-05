@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>HTML - 선택 버튼- Radio</title>
+    <meta charset="utf-8">
+    <h1>Form : lable</h1>
+    <a target="_blank" href="https://www.inflearn.com/course/html-%EA%B8%B0%EB%B3%B8/unit/952" title="inflearn | form lable">관련 강의 링크</a>
+
+  </head>
+
+  <body>
+    <form action="http://localhost/button.php">
+
+
+      <p>
+        <label for="id_input">ID : </label>
+        <!-- 레이블로 묶인 텍스트는 레이블 태그의 for 속성값(id)이 지칭하는 개체로 포커싱한다 -->
+        <!-- 다시말해 레이블로 묶인 텍스트와 그것이 지칭하는 개체를 1:1로 연결시켜준다. (id 중복 불가) -->
+        <input id="id_input" type="text" name="id" value="Enter your ID">
+      </p>
+
+      <p>
+        <label >Password :
+          <input  type="password" name="pwd" value="Enter your pwd">
+        </label>
+        <!-- 이렇게 가까운 위치라면 그냥 그 개체와 텍스트 전체를 레이블로 묶어버리는것도 가능하다. -->
+      </p>
+                     <input type="hidden" name="page" value="login">
+
+      <p>
+        <label for="feedback_comment_box">Feedback : </label>
+        <textarea id="feedback_comment_box" name="feedback" rows="8" cols="50">"We need your feedback!"</textarea> <br>
+        <input type="submit" value="피드백 전송">
+        <input type="button" value="빈 버튼">
+        <input type="reset">
+      </p>
+
+      <p>
+        <label>
+          <input type="checkbox" name="color" value="red"> 로그인 완료 확인
+        </label>
+          <!-- <ul>
+            <input type="checkbox" name="check" id="checklist"> 확인 1
+            <input type="checkbox" name="check2" id="checklist"> 확인 2
+            <input type="checkbox" name="check3" id="checklist"> 확인 3
+            <input type="checkbox" name="check4" id="checklist"> 확인 4
+            <label for="checklist">모두 확인</label>
+            이런식의 id 중복을 이용한 레이블의 중복 사용은 불가능하다
+            a라는 id가 있다면 그 id는 그 페이지에서 유일해야한다.
+          </ul> -->
+      </p>
+
+    </form>
+
+  </body>
+
+</html>
